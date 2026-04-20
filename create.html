@@ -5,33 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Create Nikah Invitation</title>
 
-  <!-- ✅ CSS -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- ✅ QR Code Library (must load BEFORE create.js) -->
-  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-</head>
-<body>
-
-  <main class="card">
-    <h2>Create Nikah Invitation</h2>
-
-    <input id="bride" placeholder="Bride Name">
-    <input id="groom" placeholder="Groom Name">
+  <!-- ✅ Styles -->
+  <link rel="stylesheet" href="styles.cssUST BE EXACT) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+          integrity="sha512-vlA6f5gQ6UZiN6Yxm9gnhs9c8QYoq7BkbL8Bt4tvkXW7OKuRpjVsCjoO+7XBJR5OHM5P8Z9n8gB63Z9Q9rY+NA==input id="groom" placeholder="Groom Name">
     <input type="date" id="date">
-    <input type="text" id="time" placeholder="Time (e.g. 12 PM onwards)">
+    <input id="time" placeholder="Time (e.g. 12 PM onwards)">
     <input id="venue" placeholder="Venue Name">
     <input id="map" placeholder="Google Maps Link">
 
-    <button class="attend" onclick="generateInvitation()">
-      Generate QR
-    </button>
+    <button class="attend" onclick="generateInvitation()">Generate QR</button>
 
-    <div id="output"></div>
+    <div id="output" style="margin-top:20px;"></div>
   </main>
 
-  <!-- ✅ THIS LINE IS CRITICAL -->
-  <script src="create.js"></script>
+  <!-- ✅ YOUR SCRIPT LOADS AFTER QR LIBRARY -->
+  <script src="ript>
 
 </body>
 </html>
